@@ -1,13 +1,13 @@
 # Site settings
-title: Your Site Title
+title: My CV
 description: >-
   A short description of your website.
   This appears in meta tags and search results.
-author: Your Name
-email: your@email.com
+author: Wessel Mulder
+email: wessel@mulder.com 
 
 # URL settings
-url: "https://yourusername.github.io"   # main site URL
+url: "https://wessel-mulder.github.io"   # main site URL
 baseurl: ""                             # leave empty for user/organization sites
 # baseurl: "/repository-name"           # use this for project pages
 
@@ -32,9 +32,8 @@ header_pages:
   - blog.md
 
 # Social links (used by minima & SEO plugins)
-github_username: yourusername
-twitter_username: yourhandle
-linkedin_username: yourhandle
+github_username: wessel-mulder
+linkedin_username: wessel_mulder
 
 # Pagination (optional)
 paginate: 5
