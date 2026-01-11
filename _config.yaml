@@ -1,0 +1,63 @@
+# Site settings
+title: Your Site Title
+description: >-
+  A short description of your website.
+  This appears in meta tags and search results.
+author: Your Name
+email: your@email.com
+
+# URL settings
+url: "https://yourusername.github.io"   # main site URL
+baseurl: ""                             # leave empty for user/organization sites
+# baseurl: "/repository-name"           # use this for project pages
+
+# Theme
+theme: minima
+# remote_theme: owner/theme-name        # use this instead if using a remote theme
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Plugins (GitHub Pages–approved)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Navigation (used by some themes)
+header_pages:
+  - index.md
+  - about.md
+  - blog.md
+
+# Social links (used by minima & SEO plugins)
+github_username: yourusername
+twitter_username: yourhandle
+linkedin_username: yourhandle
+
+# Pagination (optional)
+paginate: 5
+paginate_path: "/page:num/"
+
+# Collections (optional)
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+
+# Exclude files from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
