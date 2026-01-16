@@ -1,5 +1,5 @@
 /* Reset default margins */
-body, h1, h2, p { margin: 0; padding: 0; box-sizing: border-box; }
+body, h1, h2, p { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
 
 body {
     font-family: sans-serif;
