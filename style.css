@@ -30,10 +30,51 @@ nav {
 /* The Grid System */
 .grid-container {
     display: grid;
-    /* This creates 3 columns with different proportional widths */
     grid-template-columns: 1.2fr 1fr 1.1fr; 
+    auto-rows: minmax(200px, auto);
+    gap: 0;
+    overflow-y: auto;
     height: 90vh;
-    gap: 0; /* No gaps between the main color blocks */
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    overflow: hidden;
+}
+
+.portfolio-item:hover {
+    opacity: 0.7;
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.item-content img {
+    max-width: 100%;
+    max-height: 150px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.item-content h2 {
+    margin-bottom: 10px;
+}
+
+.item-content p {
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
 
 .column {
