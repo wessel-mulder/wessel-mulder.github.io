@@ -1,13 +1,16 @@
 /* Reset default margins */
 body, h1, h2, p { margin: 0; padding: 0; box-sizing: border-box; }
 
+body {
+    font-family: sans-serif;
+}
+
 /* Navigation */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    font-family: sans-serif;
     font-size: 2rem;
 }
 
@@ -99,7 +102,6 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
-    font-family: sans-serif;
 }
 
 .page-content h1 {
