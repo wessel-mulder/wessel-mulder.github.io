@@ -1,0 +1,37 @@
+/* Reset default margins */
+body, h1, h2, p { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+
+/* The Grid System */
+.grid-container {
+    display: grid;
+    /* This creates 3 columns with different proportional widths */
+    grid-template-columns: 1.2fr 1fr 1.1fr; 
+    height: 90vh;
+    gap: 0; /* No gaps between the main color blocks */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Applying the Colors */
+.col-left { background-color: #a0a0a0; } /* Grey */
+.col-mid { background-color: #c5e3f6; }  /* Light Blue */
+.col-right { background-color: #e5a48d; } /* Peach */
+
+/* Example of internal color change */
+.thank-u {
+    background-color: #3b8d88; /* Teal bottom right */
+    flex-grow: 1;
+}
